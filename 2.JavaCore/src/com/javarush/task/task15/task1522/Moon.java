@@ -3,11 +3,13 @@ package com.javarush.task.task15.task1522;
 /**
  * Created by sergeymyskov on 14.06.17.
  */
-public class Moon {
-    private static Moon ourInstance = new Moon();
+public class Moon implements Planet {
+    private static Moon instance;
 
     public static Moon getInstance() {
-        return ourInstance;
+        if (instance == null)
+            instance = new Moon();
+        return instance;
     }
 
     private Moon() {
