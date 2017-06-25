@@ -11,16 +11,6 @@ public class Solution {
     public static volatile List<Thread> list = new ArrayList<Thread>(5);
 
     public static void main(String[] args) {
-        Thread thread1 = new Thread();
-        list.add(thread1);
-        Thread thread2 = new Thread();
-        list.add(thread2);
-        Thread thread3 = new Thread();
-        list.add(thread3);
-        Thread thread4 = new Thread();
-        list.add(thread4);
-        Thread thread5 = new Thread();
-        list.add(thread5);
 
         SpecialThread specialThread1 = new SpecialThread();
         specialThread1.run();
@@ -32,6 +22,17 @@ public class Solution {
         specialThread4.run();
         SpecialThread specialThread5 = new SpecialThread();
         specialThread5.run();
+
+        Thread thread1 = new Thread(specialThread1);
+        list.add(thread1);
+        Thread thread2 = new Thread(specialThread2);
+        list.add(thread2);
+        Thread thread3 = new Thread(specialThread3);
+        list.add(thread3);
+        Thread thread4 = new Thread(specialThread4);
+        list.add(thread4);
+        Thread thread5 = new Thread(specialThread5);
+        list.add(thread5);
 
         //Add your code here - добавьте свой код тут
     }
