@@ -47,10 +47,11 @@ public class Solution {
 
         @Override
         public void run() {
-            startPlaying();
+            Date t1 = startPlaying();
             sleepNSeconds(1);
-            stopPlaying();
-            System.out.println();
+            Date t2 = stopPlaying();
+            long dT = t2.getTime() - t1.getTime();
+            System.out.println("Playing " + dT + " ms");
         }
     }
 }
