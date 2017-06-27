@@ -38,6 +38,21 @@ public class Solution {
         }
 
         private void printTime() throws InterruptedException {
+            Thread.sleep(1000);
+
+
+            if (seconds < 60) {
+                seconds++;
+            }
+            else if (seconds == 60){
+                seconds = 0;
+            }
+
+            if (minutes < 59 && seconds == 60)
+                minutes++;
+            else if (minutes == 59 && seconds == 60)
+                minutes = 0;
+
             //add your code here - добавь код тут
 
             if (hours == 0 && minutes == 0 && seconds == 0) {
