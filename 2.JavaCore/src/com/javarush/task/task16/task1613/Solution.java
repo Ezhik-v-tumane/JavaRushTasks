@@ -41,17 +41,33 @@ public class Solution {
             Thread.sleep(1000);
 
 
-            if (seconds < 60) {
+            if (seconds < 59) {
                 seconds++;
             }
-            else if (seconds == 60){
+            else if (seconds == 59){
                 seconds = 0;
-            }
+                if (minutes < 59)
+                    minutes++;
+                else if (minutes == 59){
+                    minutes = 0;
+                    if (hours < 23)
+                        hours++;
+                    else if (hours == 23)
+                        hours = 0;
 
-            if (minutes < 59 && seconds == 60)
+                }
+
+            }
+            /*
+            if (minutes < 59 && seconds == 59)
                 minutes++;
-            else if (minutes == 59 && seconds == 60)
+            else if (minutes == 59 && seconds == 59){
+                seconds = 0;
                 minutes = 0;
+                //hours++;
+
+            }
+            */
 
             //add your code here - добавь код тут
 
