@@ -28,6 +28,12 @@ public class Solution {
 
         public void run() {
             try {
+                seconds = 0;
+                while (Thread.interrupted()){
+                    Thread.sleep(1000);
+                    seconds++;
+                }
+
                 //add your code here - добавьте код тут
             } catch (InterruptedException e) {
                 System.out.println(seconds);
