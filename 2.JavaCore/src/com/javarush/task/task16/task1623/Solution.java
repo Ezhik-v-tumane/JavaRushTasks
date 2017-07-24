@@ -14,11 +14,15 @@ public class Solution {
 
     public static class GenerateThread extends Thread {
 
+        public GenerateThread(){
+            super(String.valueOf(++countCreatedThreads));
+            start();
+        }
         public void run() {
-            Thread t = new Thread();
-            String name = t.toString();
-            //System.out.println(getName().toString());
-            System.out.println(name);
+            if (countCreatedThreads < Solution.count) {
+                GenerateThread generateThread = new GenerateThread();
+                System.out.println(generateThread);
+            }
 
         }
 
@@ -26,7 +30,7 @@ public class Solution {
         public String toString() {
 
             //return super.toString();
-            return getName().toString() + " created";
+            return getName() + " created";
         }
     }
 }
