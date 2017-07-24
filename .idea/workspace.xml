@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1627/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1627/Условие.jrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaRushTasks.iws" />
@@ -957,7 +955,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500922547945</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="task1627">
+      <created>1500923253598</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1500923253598</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1043,7 +1048,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="task1528" />
     <MESSAGE value="task1529" />
     <MESSAGE value="task1530" />
     <MESSAGE value="task1531" />
@@ -1068,7 +1072,8 @@
     <MESSAGE value="task1624" />
     <MESSAGE value="task1625" />
     <MESSAGE value="task1626" />
-    <option name="LAST_COMMIT_MESSAGE" value="task1626" />
+    <MESSAGE value="task1627" />
+    <option name="LAST_COMMIT_MESSAGE" value="task1627" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
