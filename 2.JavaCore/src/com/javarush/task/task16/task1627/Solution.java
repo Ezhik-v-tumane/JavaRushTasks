@@ -48,7 +48,6 @@ public class Solution {
 
         @Override
         public void run() {
-            while (!OnlineGame.isWinnerFound){
                 for (int i = 0; i < OnlineGame.steps.size(); i++){
                     System.out.println(getName() + ":" + OnlineGame.steps.get(i));
                     if (i+1 == OnlineGame.steps.size()){
@@ -63,10 +62,6 @@ public class Solution {
                         System.out.println(getName() + ":" + "проиграл!");
                     }
                 }
-            }
-
-
-
             //Add your code here - добавь код тут
         }
     }
