@@ -37,10 +37,25 @@ public class Solution {
         reader.close();
     }
 
-    public static class ReaderThread extends Thread {
+    public static class ReaderThread extends Thread{
         private List<String> result = new ArrayList<String>();
 
         public void run() {
+            while (!isInterrupted()){
+                try {
+                    //String str = reader.readLine();
+                    while (reader.ready()){
+                        result.add(reader.readLine());
+                        countReadStrings.getAndAdd(1);
+
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
             //add your code here - добавьте код тут
         }
 
