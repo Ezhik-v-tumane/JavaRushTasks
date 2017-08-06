@@ -1,27 +1,22 @@
 package com.javarush.task.task16.task1630;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.ArrayList;
 
 public class Solution {
     public static String firstFileName;
     public static String secondFileName;
-
-    public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    //public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-            //firstFileName = reader.readLine();
-            firstFileName = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task16/task1630/1.txt";
-            //secondFileName = reader.readLine();
-            secondFileName = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task16/task1630/2.txt";
+            firstFileName = reader.readLine();
+            secondFileName = reader.readLine();
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
     //add your code here - добавьте код тут
 
@@ -34,11 +29,12 @@ public class Solution {
         ReadFileInterface f = new ReadFileThread();
         f.setFileName(fileName);
         f.start();
+        f.join();
         //add your code here - добавьте код тут
         System.out.println(f.getFileContent());
     }
 
-    public interface ReadFileInterface extends Runnable {
+    public interface ReadFileInterface {
 
         void setFileName(String fullFileName);
 
@@ -49,16 +45,43 @@ public class Solution {
         void start();
     }
 
-    public static class ReadFileThread extends Thread {
-        public void run(){
+    public static class ReadFileThread extends Thread implements ReadFileInterface {
+        private String fileName;
+        private ArrayList<String> content;
+
+        public ReadFileThread() {
+            this.fileName = null;
+            this.content = new ArrayList<>();
+        }
+
+        public void run() {
+            try {
+                BufferedReader fileReader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+                while (fileReader.ready()) {
+                    content.add(fileReader.readLine());
+                }
+                fileReader.close();
+            } catch (FileNotFoundException e) {
+                System.out.println("File " + fileName + " not found");
+            } catch (IOException e) {
+                System.out.println("File " + fileName + " can't read");
+            }
 
         }
 
-        void setFileName(String filename){
+        @Override
+        public void setFileName(String fullFileName) {
+            this.fileName = fullFileName;
+        }
 
-
+        @Override
+        public String getFileContent() {
+            StringBuffer sbuf = new StringBuffer();
+            for (String s : content) {
+                sbuf.append(s).append(" ");
+            }
+            return sbuf.toString();
         }
     }
-
     //add your code here - добавьте код тут
 }
