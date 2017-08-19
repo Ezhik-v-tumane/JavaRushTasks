@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Условие.jrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" />
     </list>
@@ -28,15 +27,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Solution.java">
+        <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
-              <caret line="51" column="66" lean-forward="false" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="219">
+              <caret line="21" column="177" lean-forward="false" selection-start-line="21" selection-start-column="177" selection-end-line="21" selection-end-column="177" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,19 +44,9 @@
         </entry>
       </file>
       <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Условие.jrtc">
+        <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Условие.jrtc">
           <provider selected="true" editor-type-id="EditorTypeId">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -99,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task15/task1526/Solution.java" />
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task15/task1527/Условие.jrtc" />
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task15/task1527/Solution.java" />
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task15/task1528/Solution.java" />
@@ -150,6 +134,7 @@
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1631/Solution.java" />
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1631/ImageReaderFactory.java" />
         <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Solution.java" />
+        <option value="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Solution.java" />
       </list>
     </option>
   </component>
@@ -358,6 +343,15 @@
             <path>
               <item name="JavaRushTasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaRushTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="2.JavaCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+              <item name="task16" type="462c0819:PsiDirectoryNode" />
+              <item name="task1633" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaRushTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaRushTasks" type="462c0819:PsiDirectoryNode" />
               <item name="3.JavaMultithreading" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -399,7 +393,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (1)">
+  <component name="RunManager" selected="Application.Solution (4)">
     <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -457,14 +451,14 @@
       <module name="2.JavaCore" />
       <envs />
     </configuration>
-    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.javarush.task.task16.task1627.*" />
+          <option name="PATTERN" value="com.javarush.task.task16.task1633.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task16.task1627.Solution" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task16.task1633.Solution" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -476,14 +470,14 @@
       <module name="2.JavaCore" />
       <envs />
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.javarush.task.task16.task1626.*" />
+          <option name="PATTERN" value="com.javarush.task.task16.task1627.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task16.task1626.Solution" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task16.task1627.Solution" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -693,19 +687,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Solution" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Solution (5)" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Solution (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Solution (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Solution (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Solution (5)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Solution (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Solution (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Solution (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Solution (4)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Solution (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Solution (3)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Solution (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Solution (5)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Solution" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Solution (4)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Solution (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Solution (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Solution (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Solution (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -730,13 +724,6 @@
       <workItem from="1485161981498" duration="29000" />
       <workItem from="1485162014696" duration="83000" />
       <workItem from="1485177835943" duration="100000" />
-    </task>
-    <task id="LOCAL-00005" summary="task1525">
-      <created>1497555681876</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1497555681876</updated>
     </task>
     <task id="LOCAL-00006" summary="task1525">
       <created>1497632516830</created>
@@ -1074,7 +1061,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502483520920</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="task1632">
+      <created>1503145949599</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1503145949599</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1160,7 +1154,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="task1602" />
     <MESSAGE value="task1603" />
     <MESSAGE value="task1604" />
     <MESSAGE value="task1605" />
@@ -1185,7 +1178,8 @@
     <MESSAGE value="task1629" />
     <MESSAGE value="task1630" />
     <MESSAGE value="task1631" />
-    <option name="LAST_COMMIT_MESSAGE" value="task1631" />
+    <MESSAGE value="task1632" />
+    <option name="LAST_COMMIT_MESSAGE" value="task1632" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1335,8 +1329,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Solution.java" />
-    <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Условие.jrtc" />
     <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1631/common/JpgReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1539,11 +1531,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file:///var/folders/m2/yf4n6_js1yx4zv15504w16jh0000gn/T/Валидация">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1632/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-47">
@@ -1553,6 +1540,24 @@
             <element signature="e#628#629#0" expanded="true" />
             <element signature="e#664#665#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Условие.jrtc">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///var/folders/m2/yf4n6_js1yx4zv15504w16jh0000gn/T/Валидация">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task16/task1633/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="21" column="177" lean-forward="false" selection-start-line="21" selection-start-column="177" selection-end-line="21" selection-end-column="177" />
+          <folding />
         </state>
       </provider>
     </entry>
