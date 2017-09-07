@@ -15,11 +15,11 @@ public class Solution {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String fileName1 = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task18/task1808/1.txt";
-        String fileName2 = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task18/task1808/2.txt";
+        //String fileName1 = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task18/task1808/1.txt";
+        //String fileName2 = "/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task18/task1808/2.txt";
 
-        //String fileName1 = reader.readLine();
-        //String fileName2 = reader.readLine();
+        String fileName1 = reader.readLine();
+        String fileName2 = reader.readLine();
 
         FileInputStream file1 = new FileInputStream(fileName1);
         FileOutputStream file2 = new FileOutputStream(fileName2);
