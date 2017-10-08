@@ -18,15 +18,27 @@ public class Solution {
 
         testString.printSomething();
 
-        String result = outputStream.toString();
-
         System.setOut(consoleStream);
 
-
-        StringBuilder stringBuilder = new StringBuilder(result);
-        String replaceString = stringBuilder.toString().replaceAll("te", "??");
-
-        System.out.println(replaceString);
+        String[] values = outputStream.toString().split(" ");
+        int a = Integer.parseInt(values[0]);
+        int b = Integer.parseInt(values[2]);
+        int result = 0;
+        switch (values[1]) {
+            case "+": {
+                result = a + b;
+                break;
+            }
+            case "-": {
+                result = a - b;
+                break;
+            }
+            case "*": {
+                result = a * b;
+                break;
+            }
+        }
+        System.out.println(outputStream.toString().replaceAll("\\p{Cntrl}","") + result);
     }
 
     public static class TestString {
