@@ -5,12 +5,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task19/task1918/1.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task19/task1918/Solution.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task19/task1918/Условие.jrtc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2001/1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2001/Asset.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2001/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2001/Условие.jrtc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2004/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2004/Условие.jrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaRushTasks.iws" />
@@ -607,13 +601,6 @@
       <workItem from="1485162014696" duration="83000" />
       <workItem from="1485177835943" duration="100000" />
     </task>
-    <task id="LOCAL-00077" summary="task1803">
-      <created>1504772040696</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1504772040696</updated>
-    </task>
     <task id="LOCAL-00078" summary="task1805">
       <created>1504777529307</created>
       <option name="number" value="00078" />
@@ -950,7 +937,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507655075280</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="task2001&amp;2004">
+      <created>1509995480954</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1509995480959</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1036,7 +1030,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="task1820" />
     <MESSAGE value="task1821" />
     <MESSAGE value="task1822" />
     <MESSAGE value="task1823" />
@@ -1061,7 +1054,8 @@
     <MESSAGE value="task1914" />
     <MESSAGE value="task1915" />
     <MESSAGE value="task1917" />
-    <option name="LAST_COMMIT_MESSAGE" value="task1917" />
+    <MESSAGE value="task2001&amp;2004" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2001&amp;2004" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
