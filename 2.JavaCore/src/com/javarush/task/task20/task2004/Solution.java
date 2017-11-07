@@ -11,7 +11,7 @@ public class Solution {
         //вы можете найти your_file_name.tmp в папке TMP или исправьте outputStream/inputStream в соответствии с путем к вашему реальному файлу
         try {
 
-            File your_file_name = File.createTempFile("your_file_name", null);
+            File your_file_name = File.createTempFile("/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task20/task2004/1.txt", null);
             OutputStream outputStream = new FileOutputStream(your_file_name);
             InputStream inputStream = new FileInputStream(your_file_name);
 
@@ -48,10 +48,20 @@ public class Solution {
 
         public void save(OutputStream outputStream) throws Exception {
             //implement this method - реализуйте этот метод
+            PrintWriter printWriter = new PrintWriter(outputStream);
+            printWriter.println(staticString);
+            printWriter.println(i);
+            printWriter.println(j);
+            printWriter.close();
         }
 
         public void load(InputStream inputStream) throws Exception {
             //implement this method - реализуйте этот метод
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            ClassWithStatic.staticString = bufferedReader.readLine();
+            this.i = Integer.parseInt(bufferedReader.readLine());
+            this.j = Integer.parseInt(bufferedReader.readLine());
+            bufferedReader.close();
         }
 
         @Override
