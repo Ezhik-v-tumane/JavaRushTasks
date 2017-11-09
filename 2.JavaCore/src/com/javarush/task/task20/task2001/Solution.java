@@ -12,7 +12,7 @@ public class Solution {
     public static void main(String[] args) {
         //исправьте outputStream/inputStream в соответствии с путем к вашему реальному файлу
         try {
-            File your_file_name = File.createTempFile("/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task20/task2001/1.txt", null);
+            File your_file_name = File.createTempFile("your_file_name", ".txt", new File("/Users/sergeymyskov/IdeaProjects/JavaRushTasks/2.JavaCore/src/com/javarush/task/task20/task2001"));
             OutputStream outputStream = new FileOutputStream(your_file_name);
             InputStream inputStream = new FileInputStream(your_file_name);
 
@@ -68,6 +68,11 @@ public class Solution {
 
         public void save(OutputStream outputStream) throws Exception {
             //implement this method - реализуйте этот метод
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+            objectOutputStream.writeObject(name);
+            objectOutputStream.writeObject(assets);
+            objectOutputStream.close();
+
         }
 
         public void load(InputStream inputStream) throws Exception {
