@@ -68,15 +68,25 @@ public class Solution {
 
         public void save(OutputStream outputStream) throws Exception {
             //implement this method - реализуйте этот метод
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-            objectOutputStream.writeObject(name);
-            objectOutputStream.writeObject(assets);
-            objectOutputStream.close();
+            PrintWriter printWriter = new PrintWriter(outputStream);
+            printWriter.println(name);
+            for (Asset a : assets){
+                printWriter.println(a.getName());
+                printWriter.println(a.getPrice());
+            }
+            printWriter.flush();
 
         }
 
         public void load(InputStream inputStream) throws Exception {
             //implement this method - реализуйте этот метод
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            if (bufferedReader.ready())
+                name = bufferedReader.readLine();
+            while (bufferedReader.ready()) {
+                Asset asset = new Asset(bufferedReader.readLine(), Double.parseDouble(bufferedReader.readLine()));
+                assets.add(asset);
+            }
         }
     }
 }
